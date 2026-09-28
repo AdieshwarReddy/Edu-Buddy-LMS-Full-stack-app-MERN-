@@ -4,6 +4,17 @@ Adhi EduBuddy is a modern, production-ready full-stack Learning Management Syste
 
 It features an elegant UI with glassmorphism aesthetics, comprehensive role-based access control (Student, Instructor, Admin), secure authentication, video processing with Cloudinary, and robust payment integration via Stripe.
 
+## 👨‍💻 About the Creator
+
+This platform was engineered and developed by **Adieshwar Reddy Mogili**.
+
+Connect with me or check out my other work:
+- **LinkedIn:** [Adieshwar Reddy Mogili](https://www.linkedin.com/in/adieshwar-reddy-mogili-3b4b11332/)
+- **GitHub:** [@AdieshwarReddy](https://github.com/AdieshwarReddy)
+- **YouTube:** [Adieshwar Reddy .Mogili](https://www.youtube.com/@AdieshwarReddyMogili)
+- **Instagram:** [The Confident Circle](https://www.instagram.com/theconfident_circle?stkn=MWFlbnd5YmprbGhtNw%3D%3D)
+- **Email:** mogiliadieshwarreddy5919@gmail.com
+
 ## 🌟 Key Features
 
 ### 👤 User Roles
