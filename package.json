@@ -1,0 +1,22 @@
+{
+  "name": "adhi-edubuddy",
+  "version": "1.0.0",
+  "description": "Adhi EduBuddy - Full-Stack Learning Management System",
+  "main": "server/server.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server",
+    "test": "npm test --prefix server",
+    "start": "npm start --prefix server"
+  },
+  "keywords": ["lms", "education", "react", "node", "express", "mongodb", "stripe"],
+  "author": "Adhi EduBuddy Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
