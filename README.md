@@ -1,3 +1,4 @@
+Deployed link: https://edu-buddy-lms-full-stack-app-mern.onrender.com/
 # Adhi EduBuddy 🎓
 
 Adhi EduBuddy is a modern, production-ready full-stack Learning Management System (LMS) built with the MERN stack (MongoDB, Express.js, React, Node.js). 
