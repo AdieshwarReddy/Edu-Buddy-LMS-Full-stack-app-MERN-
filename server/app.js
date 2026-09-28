@@ -30,7 +30,19 @@ const app = express();
 app.use(
   helmet({
     crossOriginResourcePolicy: false,
-    crossOriginEmbedderPolicy: false
+    crossOriginEmbedderPolicy: false,
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://js.stripe.com"],
+        styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+        fontSrc: ["'self'", "https://fonts.gstatic.com"],
+        imgSrc: ["'self'", "data:", "blob:", "https://images.unsplash.com", "https://res.cloudinary.com", "https://ui-avatars.com"],
+        mediaSrc: ["'self'", "data:", "blob:", "https://res.cloudinary.com"],
+        frameSrc: ["'self'", "https://www.youtube.com", "https://js.stripe.com", "https://hooks.stripe.com"],
+        connectSrc: ["'self'", "https://api.stripe.com"]
+      }
+    }
   })
 );
 
