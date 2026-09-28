@@ -95,16 +95,17 @@ npm test
 
 ## 📦 Deployment
 
-### Backend (Render)
-A `render.yaml` blueprint is provided in the `server` directory.
-1. Connect your GitHub repository to Render.
-2. Select "Blueprint" and it will automatically configure the Node.js Web Service based on `server/render.yaml`.
+This application is configured for a **Single-Server Deployment**. The Express backend will automatically serve the compiled React frontend in production. You can easily deploy the entire stack for free on Render.com.
 
-### Frontend (Vercel)
-A `vercel.json` is provided in the `client` directory to handle React SPA routing.
-1. Import the repository in Vercel.
-2. Set the Root Directory to `client`.
-3. Vercel will automatically detect Vite and configure the build settings (`npm run build`, `dist`).
+### Deploy to Render
+1. Push your code to a GitHub repository.
+2. Go to [Render.com](https://render.com) and create a new **Web Service**.
+3. Connect your GitHub repository.
+4. Set the **Build Command** to: `npm run install:all && npm run build`
+5. Set the **Start Command** to: `npm start`
+6. Add all the Environment Variables from your local `server/.env` file.
+   - Also add `NODE_ENV` and set it to `production`.
+7. Click **Deploy**.
 
 ## 📄 License
 
